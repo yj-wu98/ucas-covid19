@@ -97,7 +97,7 @@ MacOS和Linux服务器操作类似，也是基于crontab。基本操作见`方�
 2. 修改本地项目里面`sub.py`代码里面的sep账号和密码
 3. （可选）填写[server酱](http://sc.ftqq.com/3.version)的api，填写之后可以在程序完成打卡之后通知到微信，如果不填写不影响使用
 4. 创建 `/etc/crontab`
-   
+    
    查看com.vix.cron启动项的配置，注意里面有个KeepAlive的条件是 /etc/crontab 是否存在，存在才会执行。检查发现不存在，要手动创建：
 ```shell
 $ sudo touch /etc/crontab
